@@ -7,40 +7,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>VS Code</title>
 </head>
-<body class="bg-slate-700">
+<body class="bg-slate-800 px-20">
     <!-- Navbar -->
-    <nav>
-       <img src="assets/logo.png" alt="logo-img" class="w-20"> Visual Studio Code
-       <span></span> 
-       
-        <ul class="nav-container">
-            <li class="nav-items">Docs</li>
-            <li class="nav-items">Updates</li>
-            <li class="nav-items">Blog</li>
-            <li class="nav-items">API</li>
-            <li class="nav-items">Extensions</li>
-            <li class="nav-items">FAQ</li>
-            <li class="nav-items">Learn</li>
-        </ul>           
-        <button class="nav-buttons">Search</button>
-        <button class="nav-buttons">Download</button>
+    <nav class="display: flex justify-between gap-x-4  " >
+      
+        <ul class="display: flex gap-x-4 items-center">
+            <span class="text-white">
+                <img src="assets/logo.png" alt="logo-img" class="w-20 display: inline"> 
+                 Visual Studio Code</span> 
+            
+            <li class="text-gray-500">Docs</li>
+            <li class="text-gray-500">Updates</li>
+            <li class="text-gray-500">Blog</li>
+            <li class="text-gray-500">API</li>
+            <li class="text-gray-500">Extensions</li>
+            <li class="text-gray-500">FAQ</li>
+            <li class="text-gray-500">Learn</li>
+        </ul> 
+        <span>          
+        <button class="bg-slate-700 text-white text-lg px-8 py-2 ">Search</button>
+        <button class="text-white bg-blue-700 text-lg px-8 py-2">Download</button>
+        </span>
     </nav>
    
 <!-- MIDDLE PART -->
-<div>
+<div class="display: flex mt-28 px-0 ">
 
     <!-- left-side -->
-    <div>
-        <h2>Code editing Redefined.</h2>
+    <div class="w-96 text-white  text-center mr-20">
+        <h1 class="text-5xl ">Code editing Redefined.</h1>
+        <p>Free. Built on open source. Runs everywhere. </p>
+        <div class=" ">
+        <button class=" bg-blue-700 text-lg px-8 py-1 my-4 ">Download for Windows
+        <p >Stable Build</p>
+        </div>  
+        </button>
+        <p class="">Other platforms and Insiders Edition</p>
+        <p class="  w-72 px-9 text-xs px-10 mx-10 my-1">By using VS Code, you agree to its <span>license and privacy statement.</span></p>
     </div>
-
-    <p>Free. Built on open source. Runs everywhere. </p>
-    <button>Download for Mac
-        <p>Stable Build</p>
-    </button>
-    <p>Other platforms and Insiders Edition</p>
-    <p>By using VS Code, you agree to its <span>license and privacy statement.</span></p>
-
     <!-- right-side -->
 
     <div>
@@ -51,10 +55,10 @@
     <!-- extra-features-part -->
 
     <div>
-        <img src="assets/extra-features/intellsense.png" alt="intellisence">
+        <!-- <img src="assets/extra-features/intellsense.png" alt="intellisence">
         <img src="assets/extra-features/run&debug.png" alt="run&debug">
         <img src="/assets/extra-features/built-in-git.png" alt="built-in-git">
-        <img src="/assets/extra-features/Extensions.png" alt="Extensions">
+        <img src="/assets/extra-features/Extensions.png" alt="Extensions"> -->
 
     </div>
     

@@ -1,3 +1,4 @@
+<!-- 1. hover, 2 corousel -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>VS Code</title>
 </head>
-<body class="bg-slate-800 px-20">
+<body class="bg-[#2c2c32] " >
     <!-- Navbar -->
-    <nav class="display: flex justify-between gap-x-4  " >
+    <nav class="display: flex justify-between gap-x-4 px-20 bg-[#2c2c32] " >
       
         <ul class="display: flex gap-x-4 items-center">
             <span class="text-white">
@@ -24,26 +25,81 @@
             <li class="text-gray-500">FAQ</li>
             <li class="text-gray-500">Learn</li>
         </ul> 
-        <span>          
-        <button class="bg-slate-700 text-white text-lg px-8 py-2 ">Search</button>
+        <span>      
+        <input  placeholder="Serach Docs" class="bg-slate-700 text-white text-sm px-3 py-3 text-center mt-0">
+                    <svg class="inline absolute right-96 pl-4 pt-4" 
+                            width="42"
+                            height="34"
+                            viewBox="0 0 32 35"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                            d="M13.42 25.34C6.56004 25.34 0.97998 19.76 0.97998 12.9C0.97998 6.03999 6.56004 0.459991 13.42 0.459991C20.28 0.459991 25.86 6.03999 25.86 12.9C25.87 19.76 20.28 25.34 13.42 25.34ZM13.42 2.44999C7.66004 2.44999 2.97998 7.13999 2.97998 12.89C2.97998 18.64 7.66004 23.33 13.42 23.33C19.18 23.33 23.86 18.64 23.86 12.89C23.86 7.13999 19.18 2.44999 13.42 2.44999Z"
+                            fill="white"
+                            />
+                            <path
+                            d="M30.35 34.4C30.07 34.4 29.7899 34.28 29.5899 34.05L19.75 22.53C19.39 22.11 19.44 21.48 19.86 21.12C20.28 20.76 20.91 20.81 21.27 21.23L31.11 32.75C31.47 33.17 31.42 33.8 31 34.16C30.81 34.32 30.58 34.4 30.35 34.4Z"
+                            fill="white"
+                            />
+                        </svg>     
+
         <button class="text-white bg-blue-700 text-lg px-8 py-2">Download</button>
         </span>
     </nav>
-   
+   <!-- version updtate msg -->
+ <p class="bg-neutral-900 w-full text-center text-white py-2" ><span class="text-blue-700"> Version 1.73 </span>is now available! Read about the new features and fixes from October.</p>
+
 <!-- MIDDLE PART -->
-<div class="display: flex mt-28 px-0 ">
+<div class="display: flex mt-14 px-0 py-0 px-24 bg-[#2c2c32] ">
 
     <!-- left-side -->
-    <div class="w-96 text-white  text-center mr-20">
+    <div class="w-96 text-white  text-center mr-12">
         <h1 class="text-5xl ">Code editing Redefined.</h1>
-        <p>Free. Built on open source. Runs everywhere. </p>
-        <div class=" ">
-        <button class=" bg-blue-700 text-lg px-8 py-1 my-4 ">Download for Windows
-        <p >Stable Build</p>
-        </div>  
+        <p class="py-2 text-lg">Free. Built on open source. Runs everywhere. </p>
+        <div class="inline ">
+        <button class=" bg-blue-700 text-lg px-4 py-1 my-4 ">Download for Windows
+        <p class="text-sm">Stable Build</p>
+    </div>  
+</button>
+<button>
+        <svg class="inline w-4 bg-blue-700 py-6 px-3 pt-4 mt-4 text-center w-10 mt-3.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+            <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" fill=white/>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            </svg>
         </button>
-        <p class="">Other platforms and Insiders Edition</p>
-        <p class="  w-72 px-9 text-xs px-10 mx-10 my-1">By using VS Code, you agree to its <span>license and privacy statement.</span></p>
+        <a href="www.google.com" class="text-sm  py-2 text-blue-700 bg-neutral-900 mx-16  rounded-md block w-64">Web, Insiders edition, or other platforms</a>
+        <p class="  w-72 px-9 text-xs px-10 mx-10 my-4">By using VS Code, you agree to its 
+           <a class="text-blue-700" href="">license and privacy statement.</a></p>
     </div>
     <!-- right-side -->
 
@@ -52,16 +108,26 @@
 
     </div>
     
-    <!-- extra-features-part -->
-
-    <div>
-        <!-- <img src="assets/extra-features/intellsense.png" alt="intellisence">
-        <img src="assets/extra-features/run&debug.png" alt="run&debug">
-        <img src="/assets/extra-features/built-in-git.png" alt="built-in-git">
-        <img src="/assets/extra-features/Extensions.png" alt="Extensions"> -->
-
-    </div>
-    
 </div>
+<!-- extra-features-part -->
+
+<div class="display: flex w-full bg-white justify-center gap-x-40">
+   <div>
+    <img src="assets/extra-features/A.png" alt="intellisence" class="w-32 h-28" > <p class="text-xl -mt-4 ml-2" >Intellisence</p>
+   </div>
+   <div>
+    <img src="assets/extra-features/B.png" alt="run&debug" class="w-32 h-28 mt-4"> <p class="text-xl -mt-8 -ml-4">Run and Debug</p>
+   </div>
+   <div>
+     <img src="/assets/extra-features/C.png" alt="built-in-git" class="w-32 h-28"> <p class="text-xl -mt-4 ml-4">Built-in Git</p>
+    </div>
+   <div>
+    <img src="/assets/extra-features/D.png" alt="Extensions" class="w-32 h-28"><p class="text-xl -mt-4 ml-4">Extensions</p>
+   </div>
+</div>
+
+
+
+
 </body>
 </html>
